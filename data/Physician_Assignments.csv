@@ -1,0 +1,86 @@
+DoctorNaturalKey,DoctorName,Specialty,Department,Branch,EffectiveFrom,EffectiveTo,IsCurrent,SourceLastUpdated
+D001,Sara Samir,Cardiology,Cardiology,Riyadh,2024-01-01,2026-04-21,0,2026-04-21 10:00:00
+D001,Sara Samir,Orthopedics,Orthopedics,Jeddah,2026-04-22,,1,2026-04-22 09:00:00
+D002,Rakan Albishi,Cardiology,Cardiology,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D003,Amal Khaled,Cardiology,Cardiology,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D004,Sara Hassan,Cardiology,Cardiology,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D005,Rania Alghamdi,Internal Medicine,Internal Medicine,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D006,Salma Karam,Internal Medicine,Internal Medicine,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D007,Jood Samir,Internal Medicine,Internal Medicine,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D008,Adel Nasser,Internal Medicine,Internal Medicine,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D009,Walid Alshehri,Neurology,Neurology,Riyadh,2024-01-01,2025-03-28,0,2025-03-28 10:00:00
+D009,Walid Alshehri,Orthopedics,Orthopedics,Jeddah,2025-03-29,,1,2025-03-29 09:00:00
+D010,Ibtisam Alqurashi,Neurology,Neurology,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D011,Walid Alruwaili,Neurology,Neurology,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D012,Hany Darwish,Neurology,Neurology,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D013,Ghada Alamri,General Surgery,Surgery,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D014,Salman Wael,General Surgery,Surgery,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D015,Salma Albishi,General Surgery,Surgery,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D016,Bader Alshammari,General Surgery,Surgery,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D017,Sara Almalki,Emergency Medicine,Emergency,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D018,Rawan Alqahtani,Emergency Medicine,Emergency,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D019,Nasser Adel,Emergency Medicine,Emergency,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D020,Huda Alamri,Emergency Medicine,Emergency,Riyadh,2024-01-01,,1,2024-01-01 08:00:00
+D021,Nour Samir,Orthopedics,Orthopedics,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D022,Adel Alruwaili,Orthopedics,Orthopedics,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D023,Yousef Haddad,Orthopedics,Orthopedics,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D024,Amal Younes,Orthopedics,Orthopedics,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D025,Hessa Nasser,General Surgery,Surgery,Jeddah,2024-01-01,2025-11-20,0,2025-11-20 10:00:00
+D025,Hessa Nasser,Internal Medicine,Internal Medicine,Jeddah,2025-11-21,,1,2025-11-21 09:00:00
+D026,Fahad Aldosari,General Surgery,Surgery,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D027,Tariq Alqurashi,General Surgery,Surgery,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D028,Maha Alotaibi,General Surgery,Surgery,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D029,Salma Almutairi,Cardiology,Cardiology,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D030,Jood Hassan,Cardiology,Cardiology,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D031,Sami Fawzy,Cardiology,Cardiology,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D032,Tariq Haddad,Cardiology,Cardiology,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D033,Salman Alomari,Internal Medicine,Internal Medicine,Jeddah,2024-01-01,2026-02-06,0,2026-02-06 10:00:00
+D033,Salman Alomari,General Surgery,Surgery,Dammam,2026-02-07,,1,2026-02-07 09:00:00
+D034,Sami Alruwaili,Internal Medicine,Internal Medicine,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D035,Sara Alqurashi,Internal Medicine,Internal Medicine,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D036,Ghada Aldosari,Internal Medicine,Internal Medicine,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D037,Bader Alshehri,Emergency Medicine,Emergency,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D038,Hessa Alhazmi,Emergency Medicine,Emergency,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D039,Reem Alshammari,Emergency Medicine,Emergency,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D040,Majed Alsayed,Emergency Medicine,Emergency,Jeddah,2024-01-01,,1,2024-01-01 08:00:00
+D041,Taghreed Albishi,Cardiology,Cardiology,Dammam,2024-01-01,,1,2024-01-01 08:00:00
+D042,Nour Adel,Cardiology,Cardiology,Dammam,2024-01-01,,1,2024-01-01 08:00:00
+D043,Lina Mostafa,Cardiology,Cardiology,Dammam,2024-01-01,,1,2024-01-01 08:00:00
+D044,Sara Alsaedi,General Surgery,Surgery,Dammam,2024-01-01,,1,2024-01-01 08:00:00
+D045,Fahad Adel,General Surgery,Surgery,Dammam,2024-01-01,,1,2024-01-01 08:00:00
+D046,Amal Wael,General Surgery,Surgery,Dammam,2024-01-01,,1,2024-01-01 08:00:00
+D047,Ibtisam Alharthi,Internal Medicine,Internal Medicine,Dammam,2024-01-01,,1,2024-01-01 08:00:00
+D048,Rawan Alyami,Internal Medicine,Internal Medicine,Dammam,2024-01-01,,1,2024-01-01 08:00:00
+D049,Karim Hassan,Internal Medicine,Internal Medicine,Dammam,2024-01-01,,1,2024-01-01 08:00:00
+D050,Lina Alshehri,Internal Medicine,Internal Medicine,Tabuk,2024-01-01,2025-08-15,0,2025-08-15 10:00:00
+D050,Lina Alshehri,Internal Medicine,Internal Medicine,Dammam,2025-08-16,,1,2025-08-16 09:00:00
+D051,Ibtisam Aldosari,Internal Medicine,Internal Medicine,Tabuk,2024-01-01,,1,2024-01-01 08:00:00
+D052,Hamza Alharbi,Internal Medicine,Internal Medicine,Tabuk,2024-01-01,,1,2024-01-01 08:00:00
+D053,Ghada Nasser,Emergency Medicine,Emergency,Tabuk,2024-01-01,2026-05-02,0,2026-05-02 10:00:00
+D053,Ghada Nasser,Cardiology,Cardiology,Jeddah,2026-05-03,,1,2026-05-03 09:00:00
+D054,Ghada Alsayed,Emergency Medicine,Emergency,Tabuk,2024-01-01,,1,2024-01-01 08:00:00
+D055,Bader Mostafa,Emergency Medicine,Emergency,Tabuk,2024-01-01,,1,2024-01-01 08:00:00
+D056,Huda Nasser,Orthopedics,Orthopedics,Tabuk,2024-01-01,2025-04-24,0,2025-04-24 10:00:00
+D056,Huda Nasser,Cardiology,Cardiology,Jeddah,2025-04-25,,1,2025-04-25 09:00:00
+D057,Majed Alqurashi,Orthopedics,Orthopedics,Tabuk,2024-01-01,,1,2024-01-01 08:00:00
+D058,Walid Almalki,Orthopedics,Orthopedics,Tabuk,2024-01-01,,1,2024-01-01 08:00:00
+D059,Mona Alshehri,Emergency Medicine,Emergency,Buraidah,2024-01-01,2026-03-03,0,2026-03-03 10:00:00
+D059,Mona Alshehri,Emergency Medicine,Emergency,Riyadh,2026-03-04,,1,2026-03-04 09:00:00
+D060,Karim Alzahrani,Emergency Medicine,Emergency,Buraidah,2024-01-01,,1,2024-01-01 08:00:00
+D061,Amal Alsayed,Emergency Medicine,Emergency,Buraidah,2024-01-01,,1,2024-01-01 08:00:00
+D062,Rakan Alqurashi,Internal Medicine,Internal Medicine,Buraidah,2024-01-01,2026-04-21,0,2026-04-21 10:00:00
+D062,Rakan Alqurashi,General Surgery,Surgery,Dammam,2026-04-22,,1,2026-04-22 09:00:00
+D063,Nasser Almalki,Internal Medicine,Internal Medicine,Buraidah,2024-01-01,,1,2024-01-01 08:00:00
+D064,Majed Alamri,Internal Medicine,Internal Medicine,Buraidah,2024-01-01,,1,2024-01-01 08:00:00
+D065,Majed Almalki,General Surgery,Surgery,Buraidah,2024-01-01,2025-11-14,0,2025-11-14 10:00:00
+D065,Majed Almalki,General Surgery,Surgery,Jeddah,2025-11-15,,1,2025-11-15 09:00:00
+D066,Ghada Alsaedi,General Surgery,Surgery,Buraidah,2024-01-01,,1,2024-01-01 08:00:00
+D067,Ziad Alotaibi,General Surgery,Surgery,Buraidah,2024-01-01,,1,2024-01-01 08:00:00
+D068,Reem Albishi,Internal Medicine,Internal Medicine,Buraidah,2024-01-01,2025-03-03,0,2025-03-04 08:00:00
+D068,Reem Albishi,Internal Medicine,Internal Medicine,Buraidah,2025-02-25,,1,2025-03-04 09:00:00
+D069,Wafa Alsubaie,Orthopedics,Orthopedics,Jeddah,2024-01-01,2025-08-24,0,2025-08-25 08:00:00
+D069,Wafa Alsubaie,Orthopedics,Orthopedics,Jeddah,2025-08-18,,1,2025-08-25 09:00:00
+D070,Huda Alsulami,Emergency Medicine,Emergency,Jeddah,2024-01-01,2025-09-17,0,2025-09-18 07:00:00
+D070,Huda Alsulami,Emergency Medicine,Emergency,Jeddah,2025-09-22,,1,2025-09-22 08:00:00
+D071,Wafa Khaled,Neurology,Neurology,Riyadh,2024-01-01,2025-05-27,0,2025-05-28 07:00:00
+D071,Wafa Khaled,Neurology,Neurology,Riyadh,2025-06-01,,1,2025-06-01 08:00:00

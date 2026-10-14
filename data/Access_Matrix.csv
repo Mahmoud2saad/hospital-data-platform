@@ -1,0 +1,20 @@
+UserEmail,AccessLevel,Branch,Department,IsActive
+enterprise.admin@mhg.example,Enterprise,ALL,ALL,1
+quality.director@mhg.example,Enterprise,ALL,ALL,1
+riyadh.director@mhg.example,Branch,Riyadh,ALL,1
+jeddah.director@mhg.example,Branch,Jeddah,ALL,1
+dammam.director@mhg.example,Branch,Dammam,ALL,1
+tabuk.director@mhg.example,Branch,Tabuk,ALL,1
+buraidah.director@mhg.example,Branch,Buraidah,ALL,1
+jeddah.director@mhg.example,Department,Jeddah,Cardiology,1
+cardio.head@mhg.example,Department,Riyadh,Cardiology,1
+cardio.head@mhg.example,Department,Dammam,Cardiology,1
+cardio.head@mhg.example,Department,Jeddah,Cardiology,1
+im.head@mhg.example,Department,Riyadh,Internal Medicine,1
+ops.multi@mhg.example,Department,Jeddah,Orthopedics,1
+ops.multi@mhg.example,Department,Jeddah,Surgery,1
+ops.multi@mhg.example,Department,Tabuk,Internal Medicine,1
+mixed.access@mhg.example,Branch,Buraidah,ALL,1
+mixed.access@mhg.example,Branch,Riyadh,ALL,0
+former.employee@mhg.example,Branch,Riyadh,ALL,0
+former.contractor@mhg.example,Department,Tabuk,Emergency,0

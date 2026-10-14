@@ -1,0 +1,8 @@
+# Uses the DuckDB file produced by `python pipeline/run_pipeline.py` (bronze already landed there).
+meridian:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('MHG_DB', '../output/warehouse.duckdb') }}"
+      threads: 2

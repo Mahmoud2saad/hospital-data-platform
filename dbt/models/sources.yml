@@ -1,0 +1,19 @@
+version: 2
+sources:
+  - name: bronze
+    description: Append-only landed extracts, loaded by pipeline/run_pipeline.py (schema-drift guarded).
+    schema: bronze
+    tables:
+      - name: fact_admissions
+      - name: dim_doctors_scd
+      - name: billing_transactions
+      - name: security_matrix_rls
+      - name: source_change_log
+  - name: legacy_gold
+    description: Gold tables built by the plain-SQL pipeline - used only by the equivalence tests.
+    schema: gold
+    tables:
+      - name: fact_admission
+      - name: fact_readmission_index
+      - name: fact_billing_transaction
+      - name: dim_doctor

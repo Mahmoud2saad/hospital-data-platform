@@ -1,0 +1,12 @@
+name: meridian_health
+version: "1.0.0"
+config-version: 2
+profile: meridian
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+models:
+  meridian_health:
+    +materialized: table
+    silver: { +schema: dbt_silver }
+    gold:   { +schema: dbt_gold }

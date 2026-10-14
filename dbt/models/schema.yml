@@ -1,0 +1,32 @@
+version: 2
+models:
+  - name: admission_trusted
+    columns:
+      - { name: AdmissionID, tests: [unique, not_null] }
+      - { name: is_valid_admission, tests: [{ accepted_values: { values: [0, 1], quote: false } }] }
+  - name: billing_trusted
+    columns: [{ name: TransactionID, tests: [unique, not_null] }]
+  - name: dim_doctor
+    columns: [{ name: DoctorSK, tests: [unique, not_null] }]
+  - name: dim_branch
+    columns: [{ name: BranchSK, tests: [unique, not_null] }]
+  - name: dim_department
+    columns: [{ name: DepartmentSK, tests: [unique, not_null] }]
+  - name: dim_patient
+    columns: [{ name: PatientSK, tests: [unique, not_null] }]
+  - name: dim_date
+    columns: [{ name: DateSK, tests: [unique, not_null] }]
+  - name: fact_admission
+    columns:
+      - { name: AdmissionID, tests: [unique, not_null] }
+      - { name: DoctorSK, tests: [not_null, { relationships: { to: ref('dim_doctor'), field: DoctorSK } }] }
+      - { name: BranchSK, tests: [{ relationships: { to: ref('dim_branch'), field: BranchSK } }] }
+      - { name: DepartmentSK, tests: [{ relationships: { to: ref('dim_department'), field: DepartmentSK } }] }
+      - { name: AdmitDateSK, tests: [{ relationships: { to: ref('dim_date'), field: DateSK } }] }
+  - name: fact_readmission_index
+    columns:
+      - { name: index_admission_id, tests: [unique, not_null, { relationships: { to: ref('fact_admission'), field: AdmissionID } }] }
+  - name: fact_billing_transaction
+    columns:
+      - { name: TransactionID, tests: [unique, not_null] }
+      - { name: ServiceDateSK, tests: [{ relationships: { to: ref('dim_date'), field: DateSK } }] }

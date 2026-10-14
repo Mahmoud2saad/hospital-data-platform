@@ -1,0 +1,40 @@
+digraph G {
+  rankdir=LR; compound=true; nodesep=0.28; ranksep=0.55; fontname="Helvetica";
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, color="#555555"];
+  edge [color="#555555", arrowsize=0.7];
+
+  subgraph cluster_src { label="SOURCE SYSTEMS"; style="rounded"; color="#888888"; fontname="Helvetica-Bold"; fontsize=11;
+    node [shape=cylinder, fillcolor="#e8f0fb"];
+    billing [label="Billing system"]; hr [label="Physician / HR master\n(SCD2 history)"];
+    his [label="HIS x5 branches\n(Riyadh / Jeddah / Dammam /\nTabuk / Buraidah)"]; cdc [label="Change feed\n(CDC log)"];
+  }
+  subgraph cluster_b { label="BRONZE  (append-only, schema-drift guarded)"; style="rounded"; color="#888888"; fontname="Helvetica-Bold"; fontsize=11;
+    node [fillcolor="#fdebd0"];
+    b_bill [label="bronze.billing_transactions"]; b_doc [label="bronze.dim_doctors_scd"];
+    b_adm [label="bronze.fact_admissions"]; b_log [label="bronze.source_change_log"]; b_sec [label="bronze.security_matrix_rls"];
+  }
+  subgraph cluster_s { label="SILVER  (dedup + validate + flag)"; style="rounded"; color="#888888"; fontname="Helvetica-Bold"; fontsize=11;
+    node [fillcolor="#fcf3cf"];
+    s_bill [label="silver.billing_trusted"]; s_doc [label="silver.doctor_scd_trusted"];
+    s_adm [label="silver.admission_trusted\n(latest version, DQ flags, deletes)"]; s_attr [label="silver.doctor_attribution\n(point-in-time SCD join)"];
+  }
+  subgraph cluster_g { label="GOLD  (star schema)"; style="rounded"; color="#888888"; fontname="Helvetica-Bold"; fontsize=11;
+    node [fillcolor="#d5f5e3"];
+    dims [label="conformed dimensions\ndate / branch / department /\npatient / doctor (SCD2)"];
+    f_adm [label="gold.fact_admission"]; f_re [label="gold.fact_readmission_index\n+ KPI views (4 grains)"];
+    f_bill [label="gold.fact_billing_transaction\n+ revenue bridge"]; rls [label="gold.entitlement_expanded\n(RLS bridge)"];
+  }
+  bi [label="BI / dashboard\n(semantic layer)", fillcolor="#e8daef"];
+  subgraph cluster_c { label="CONTROL / OPS"; style="rounded"; color="#888888"; fontname="Helvetica-Bold"; fontsize=11;
+    node [shape=note, fillcolor="#f4ecf7"];
+    dq [label="ctl.dq_exceptions\n(per-run register)"]; wm [label="ctl.watermark"]; log [label="ctl.pipeline_run_log\n+ monitoring views"];
+  }
+  billing -> b_bill; hr -> b_doc; his -> b_adm; cdc -> b_log;
+  b_bill -> s_bill; b_doc -> s_doc; b_adm -> s_adm; b_log -> s_adm [style=dashed, label="deletes", fontsize=8];
+  s_doc -> s_attr; s_adm -> s_attr; s_doc -> dims; s_adm -> dims;
+  s_adm -> f_adm; s_attr -> f_adm; dims -> f_adm [style=dashed]; f_adm -> f_re; s_bill -> f_bill; dims -> f_bill [style=dashed];
+  b_sec -> rls; f_adm -> rls [style=dashed];
+  f_adm -> bi; f_re -> bi; f_bill -> bi; rls -> bi [label="filters", fontsize=8];
+  b_log -> wm [style=dotted, color="#8e44ad"]; s_adm -> dq [style=dotted, color="#8e44ad"]; f_re -> dq [style=dotted, color="#8e44ad"];
+  wm -> log [style=dotted, color="#8e44ad"];
+}
